@@ -1,0 +1,217 @@
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+.hidden { display: none; }
+
+.animation {
+    width: 555px;
+    margin: 0 auto;
+    border: thin solid black;
+
+    position: relative;
+    overflow: hidden;
+
+    background-color: white;
+}
+
+#layout { position: relative; z-index: 5000; }
+
+#bullets { opacity: 0; }
+
+.text-fade { animation: fadeWordsIn 0.2s forwards; }
+
+.girl-intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 531px;
+    margin-top: 50px;
+    margin-left: -40px;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.animate-girl {
+    animation-name: movegirl;
+}
+
+
+/* the 'greater than' means a direct descendant of the original container 
+(the element with an id of #firstFive) */
+
+#part1 > path { opacity: 0; }
+
+#part2 > path { opacity: 0; }
+
+#part3 > path { opacity: 0; }
+
+#part4 > path { opacity: 0; }
+
+#part5 > path { opacity: 0; }
+
+.start-button { 
+    position: absolute;  
+    bottom: 50px;
+    left: 320px;
+    width: 150px;
+
+    cursor: pointer;
+
+    z-index: 5001;
+}
+
+
+
+/* keyframe animations go here */
+#call-3 { animation-duration: 0.5s; animation-delay: 0.5s }
+#me-3 { animation-duration: 1.2s;  animation-delay: 0.5s }
+#maybe-3 { animation-duration: 2s; animation-delay: 0.75s }
+#carly { animation-duration: 2.2s;  animation-delay: 1s }
+
+/* text animation synced to audio */
+#Ithrew { animation-delay: 0.5s; }
+#awish { animation-delay: 0.65s; }
+#in { animation-delay: 1s;}
+#thewell { animation-delay: 1.5s; }
+#dont { animation-delay: 2.5s; }
+#askme { animation-delay: 2.75s; }
+#illnevertell { animation-delay: 3.2s; }
+#ilooked { animation-delay: 4s; }
+#to { animation-delay: 4.3s; }
+#you { animation-delay: 4.9s; }
+#asitfell { animation-delay: 5.2s; }
+#and { animation-delay: 6s; }
+#now { animation-delay: 6.3s; }
+#youre { animation-delay: 6.6s; }
+#in2 { animation-delay: 7s; }
+#my { animation-delay: 7.2s; }
+#way { animation-delay: 7.5s; }
+#itrade { animation-delay: 8s; }
+#my-2 { animation-delay: 8.5s; }
+#soul { animation-delay: 8.9s; }
+#fora { animation-delay: 9.2s; }
+#wish { animation-delay: 9.8s; }
+#pennies { animation-delay: 10.2s; }
+#and-2 { animation-delay: 10.7s; }
+#dimes { animation-delay: 11.3s; }
+#fora-2 { animation-delay: 11.6s; }
+#kissicon { animation-delay: 11.8s; }
+#kiss { animation-delay: 12s; }
+#i { animation-delay: 12.4s; }
+#wasnt { animation-delay: 12.7s; }
+#looking { animation-delay: 13.2s; }
+#for { animation-delay: 13.7s; }
+#this { animation-delay: 14s; }
+#but { animation-delay: 14.3s; }
+#now-2 { animation-delay: 14.6s; }
+#youre-2 { animation-delay: 14.8s; }
+#in-2 { animation-delay: 15.2s; }
+#my02 { animation-delay: 15.5s; }
+#way-2 { animation-delay: 15.8s; }
+#your { animation-delay: 16.3s; }
+#stare { animation-delay: 16.8s; }
+#was { animation-delay: 17s; }
+#holding { animation-delay: 17.3s; }
+#rippedjeans { animation-delay: 17.9s; }
+#skin { animation-delay: 18.2s; }
+#was-2 { animation-delay: 18.5s; }
+#showin { animation-delay: 18.8s; }
+#hot { animation-delay: 20s; }
+#night { animation-delay: 20.5s; }
+#wind { animation-delay: 21s; }
+#was-3 { animation-delay: 21.2s; }
+#blowin { animation-delay: 21.6s; }
+#where { animation-delay: 22.3s; }
+#you2 { animation-delay: 22.6s; }
+#think { animation-delay: 22.9s; }
+#youre-3 { animation-delay: 23.2s; }
+#going { animation-delay: 23.5s; }
+#baby { animation-delay: 23.7s; }
+#heart { animation-delay: 24.3s; }
+#hey { animation-delay: 24.6s; }
+#ijust { animation-delay: 25.2s; }
+#met { animation-delay: 25.5s; }
+#you-2 { animation-delay: 26s; }
+#and-3 { animation-delay: 27s; }
+#thisis { animation-delay: 27.5s; }
+#crazy { animation-delay: 28s; }
+#but-2 { animation-delay: 28.5s; }
+#heresmy { animation-delay: 29s; }
+#number { animation-delay: 29.6s; }
+#so { animation-delay: 30.5s; }
+#call { animation-delay: 30.8s; }
+#me { animation-delay: 31.2s; }
+#maybe { animation-delay: 31.6s; }
+#its { animation-delay: 32.5s; }
+#hardto { animation-delay: 33s; }
+#look { animation-delay: 33.4s; }
+#right { animation-delay: 34s; }
+#atyou { animation-delay: 35s; }
+#baby-2 { animation-delay: 35.5s; }
+#but-3 { animation-delay: 36.6s; }
+#heres { animation-delay: 36.8s; } 
+#my-3 { animation-delay: 37.1s; }
+#number-2 { animation-delay: 37.4s; }
+#so-2 { animation-delay: 38.8s; }
+#call-2 { animation-delay: 39.3s; }
+#me-2 { animation-delay: 39.6s; }
+#maybe-2 { animation-delay: 40s; }
+
+.intro-fade {
+    animation-name: fadeElementOut;
+    animation-fill-mode: forwards;
+}
+
+.theboy { 
+    position: absolute;
+    z-index: 500;
+    bottom: -60px;
+    right: -50px;
+
+    transform: scale(0.7);
+    animation-delay: 2s;
+
+    opacity: 0;
+}
+
+.zoom-tony { 
+    animation: zoomTony 0.75s forwards; 
+    animation-delay: 40s;
+}
+
+/* generic opacity fade */
+@keyframes fadeElementOut {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes movegirl {
+    to { left: -500px; }
+}
+
+@keyframes fadeWordsIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes zoomTony {
+    0% { opacity: 0 }
+    10% { opacity: 1 }
+
+    80% { transform: scale(1.8); opacity: 1; }
+    100% { opacity: 1; transform: scale(1); }
+}
+
